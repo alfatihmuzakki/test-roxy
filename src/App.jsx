@@ -68,7 +68,7 @@ function App() {
                 <input type="text" className="border-2" onChange={(e) => setQuantity(e.target.value)} />
               </div>
             </div>
-            <button>add item</button>
+            <button className="border-2 p-2 rounded-md hover:bg-slate-300">add item</button>
           </form>
         </div>
 
@@ -89,7 +89,7 @@ function App() {
                 <p className="w-[100px]">{item.quantity}</p>
                 <p>
                   <span>
-                    <button className="border-2 p-1" onClick={() => handleDeleteItem(item.id)}>
+                    <button className="border-2 p-[3px] hover:bg-slate-300 rounded-md" onClick={() => handleDeleteItem(item.id)}>
                       hapus
                     </button>
                   </span>
